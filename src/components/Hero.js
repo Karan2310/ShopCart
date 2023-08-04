@@ -4,15 +4,12 @@ import HeroImg from "../assets/hero.png";
 const Hero = () => {
   return (
     <div
-      className="flex flex-col md:flex-row px-20 pt-7 mx-10"
+      className="flex flex-col md:flex-row px-8  md:px-20 pt-7 mx-10"
       style={{ backgroundColor: "#fbefe4" }}
     >
-      <div
-        className="md:w-11/12 flex flex-col items-start justify-center text-green-900 text-4xl md:text-5xl font-semibold "
-        style={{ lineHeight: "3rem" }}
-      >
+      <div className="md:w-11/12 flex flex-col items-start justify-center text-green-900 text-3xl md:text-5xl font-semibold ">
         <h1>Grab Upto 50% Off On Selected Headphone</h1>
-        <button className="bg-green-900 rounded-full hover:bg-white hover:text-green-900 hover:ring-4 ring-green-900 p-4 text-white text-sm px-10 mt-10">
+        <button className="bg-green-900 rounded-full hover:bg-white hover:text-green-900 hover:ring-4 ring-green-900 p-3 md:p-4 text-white text-sm px-10 md:px-10 mt-8">
           Buy Now
         </button>
       </div>
