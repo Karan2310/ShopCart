@@ -2,7 +2,7 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <div className="hidden sm:flex w-full  items-center justify-between bg-green-900 text-white p-3 px-6 font-light text-sm">
+    <div className="hidden sm:flex w-full  items-center justify-between bg-green-900 text-white p-3 px-10 font-light text-sm">
       <div className="flex items-center">
         <i className="fa-solid fa-phone me-2"></i>
         <p>+12 3456789098</p>

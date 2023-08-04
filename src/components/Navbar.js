@@ -7,7 +7,7 @@ const Navbar = () => {
     <>
       <Banner />
       <nav className="bg-white border-gray-200 dark:bg-gray-900">
-        <div className=" flex flex-wrap items-center justify-between mx-auto p-4">
+        <div className=" flex flex-wrap items-center justify-between mx-auto p-4 px-10">
           <a href="#" className="flex items-center">
             {/* <img
             src=""
@@ -80,7 +80,7 @@ const Navbar = () => {
                 Account
               </a>
             </div>
-            <div className="flex items-center mx-3 hidden md:flex">
+            <div className=" items-center mx-3 hidden md:flex">
               <i className="fa-solid fa-cart-shopping me-2"></i>
               <a
                 href="#"
