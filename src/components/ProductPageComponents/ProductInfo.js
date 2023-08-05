@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
 const ProductInfo = ({ currentProduct }) => {
   const colors = ["red", "blue", "green", "gray"];
+  const [productCount, setProductCount] = useState(0);
   return (
     <div>
       <div className="md:w-3/4">
@@ -116,9 +117,25 @@ const ProductInfo = ({ currentProduct }) => {
         <div>
           <div className="flex items-center ">
             <div className="bg-gray-100 flex items-center p-1 px-6 rounded-full font-semibold text-lg">
-              <button className="p-2">-</button>
-              <p className="mx-5">1</p>
-              <button className="p-2">+</button>
+              <button
+                className="p-2"
+                onClick={() => {
+                  if (productCount > 0) {
+                    setProductCount(productCount - 1);
+                  }
+                }}
+              >
+                -
+              </button>
+              <p className="mx-5">{productCount}</p>
+              <button
+                className="p-2"
+                onClick={() => {
+                  setProductCount(productCount + 1);
+                }}
+              >
+                +
+              </button>
             </div>
             <div className="flex flex-col  ms-5 md:ms-10 text-xs md:text-sm font-normal">
               <p>
