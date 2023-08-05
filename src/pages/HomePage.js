@@ -3,12 +3,12 @@ import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Filters from "../components/Filters";
 import ProductGallery from "../components/ProductGallery";
-const HomePage = () => {
+const HomePage = ({ products }) => {
   return (
     <>
       <Hero />
       <Filters />
-      <ProductGallery />
+      <ProductGallery products={products} />
     </>
   );
 };

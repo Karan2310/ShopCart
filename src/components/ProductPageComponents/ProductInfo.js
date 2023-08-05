@@ -1,18 +1,16 @@
 import React from "react";
 
-const ProductInfo = () => {
+const ProductInfo = ({ currentProduct }) => {
   const colors = ["red", "blue", "green", "gray"];
   return (
     <div>
       <div className="md:w-3/4">
-        <h1 className="text-3xl font-semibold">JBL Headphone</h1>
+        <h1 className="text-3xl font-semibold">{currentProduct.title}</h1>
         <p
           style={{ fontSize: "12px" }}
           className="text-gray-500 my-3 font-medium "
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-          cum velit dolorem harum voluptatibus delectus placeat ab? Delectus,
-          tenetur odit?
+          {currentProduct.description}
         </p>
         <div className="rating flex items-center ">
           <div class="flex items-center space-x-1">
@@ -66,7 +64,7 @@ const ProductInfo = () => {
             style={{ fontSize: "12px" }}
             className="text-gray-700 ms-2 font-medium"
           >
-            (121)
+            ({currentProduct.rating.count})
           </p>
         </div>
 
@@ -76,7 +74,10 @@ const ProductInfo = () => {
         ></div>
         {/* Price Tab */}
         <div className="price">
-          <p className="font-medium text-2xl">$540.00 or 99.99/month</p>
+          <p className="font-medium text-2xl">
+            ${currentProduct.price} or {(currentProduct.price / 6).toFixed(2)}
+            /month
+          </p>
           <p
             style={{ fontSize: "12px" }}
             className="desc text-gray-500 my-1 font-medium "

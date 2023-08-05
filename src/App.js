@@ -4,9 +4,11 @@ import ProductPage from "./pages/ProductPage";
 import Navbar from "./components/Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Loading from "./pages/Loading";
-import { useState } from "react";
+
+import { useProductContext } from "./ProductsContext";
+
 function App() {
-  const [loading, setLoading] = useState(false);
+  const { loading } = useProductContext();
   return (
     <div className="App">
       <BrowserRouter>
