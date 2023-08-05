@@ -19,9 +19,12 @@ const PhotoCard = ({ currentProduct }) => {
           />
         </div>
         <div className="grid grid-cols-4 gap-4">
-          {Images.map((e) => {
+          {Images.map((e, index) => {
             return (
-              <div className="bg-gray-100 rounded-xl flex items-center justify-center aspect-square overflow-hidden p-4 lg:p-8">
+              <div
+                className="bg-gray-100 rounded-xl flex items-center justify-center aspect-square overflow-hidden p-4 lg:p-8"
+                key={index}
+              >
                 <img
                   src={e}
                   alt={currentProduct.title}

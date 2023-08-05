@@ -16,6 +16,7 @@ const ProductInfo = ({ currentProduct }) => {
         </p>
         <div className="rating flex items-center ">
           <div className="flex items-center space-x-1">
+            <p className="font-medium text-sm">{currentProduct.rating.rate}</p>
             <StarRating rating={currentProduct.rating.rate} />
           </div>
           <p
