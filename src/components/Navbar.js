@@ -152,7 +152,7 @@ const Navbar = () => {
               <li>
                 <a
                   href="#"
-                  className=" py-2 pl-3 pr-4 text-white bg-green-900 rounded md:bg-transparent md:text-black md:p-0 flex items-center"
+                  className=" py-2 pl-3 pr-4 text-white bg-green-900 rounded md:bg-transparent md:text-black md:p-0 flex items-center justify-between "
                   aria-current="page"
                 >
                   Categories
