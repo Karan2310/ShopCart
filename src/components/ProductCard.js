@@ -2,7 +2,7 @@ import React from "react";
 import Image from "../assets/headphone.png";
 const ProductCard = () => {
   return (
-    <div className="card">
+    <div className="card hover:scale-105 cursor-pointer transition-all">
       <div
         className="bg-gray-100 rounded-xl flex items-center justify-center aspect-square overflow-hidden relative"
         style={{ maxWidth: "25rem", minWidth: "15rem" }}
