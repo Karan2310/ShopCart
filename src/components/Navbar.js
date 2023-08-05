@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Banner from "./Banner";
+import Logo from "../assets/logo.png";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -8,16 +10,12 @@ const Navbar = () => {
       <Banner />
       <nav className="bg-white border-gray-200 dark:bg-gray-900">
         <div className=" flex flex-wrap items-center justify-between mx-auto p-4 px-10">
-          <a href="#" className="flex items-center">
-            {/* <img
-            src=""
-            className="h-8 mr-3"
-            alt="Flowbite Logo"
-          /> */}
+          <NavLink to="/" className="flex items-center">
+            <img src={Logo} className="h-14 mr-1 w-auto" alt="Shopcart Logo" />
             <span className="self-center text-2xl font-semibold whitespace-nowrap text-green-900 dark:text-white">
               Shopcart
             </span>
-          </a>
+          </NavLink>
           <div className="flex md:order-2">
             <button
               type="button"

@@ -2,7 +2,6 @@ import React from "react";
 import PhotoCard from "../components/ProductPageComponents/PhotoCard";
 import ProductInfo from "../components/ProductPageComponents/ProductInfo";
 const ProductPage = () => {
-  const colors = ["red", "blue", "green", "gray"];
   return (
     <div className="pb-20">
       <div
@@ -19,7 +18,7 @@ const ProductPage = () => {
           <PhotoCard />
         </div>
         <div className="info mt-10 md:mt-0 md:w-1/2">
-          <ProductInfo colors={colors} />
+          <ProductInfo />
         </div>
       </div>
     </div>

@@ -3,7 +3,10 @@ import HomePage from "./pages/HomePage";
 import ProductPage from "./pages/ProductPage";
 import Navbar from "./components/Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Loading from "./pages/Loading";
+import { useState } from "react";
 function App() {
+  const [loading, setLoading] = useState(false);
   return (
     <div className="App">
       <BrowserRouter>
@@ -14,6 +17,7 @@ function App() {
           <Route path="*" element={<HomePage />} />
         </Routes>
       </BrowserRouter>
+      {loading && <Loading />}
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import React from "react";
 
-const ProductInfo = ({ colors }) => {
+const ProductInfo = () => {
+  const colors = ["red", "blue", "green", "gray"];
   return (
     <div>
       <div className="md:w-3/4">
@@ -92,9 +93,12 @@ const ProductInfo = ({ colors }) => {
         <div className="color">
           <h1 className="text-lg font-medium">Choose Color</h1>
           <div className="options my-4 flex">
-            {colors.map((e) => {
+            {colors.map((e, index) => {
               return (
-                <div className="colorbox  h-10 w-10 rounded-full border-2 cursor-pointer border-black flex items-center justify-center me-3 ">
+                <div
+                  className="colorbox  h-10 w-10 rounded-full border-2 cursor-pointer border-black flex items-center justify-center me-3 "
+                  key={index}
+                >
                   <div className={`bg-${e}-300 h-8 w-8 rounded-full`}></div>
                 </div>
               );
