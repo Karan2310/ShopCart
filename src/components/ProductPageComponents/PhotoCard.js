@@ -1,5 +1,4 @@
 import React from "react";
-import Photo from "../../assets/headphone.png";
 
 const PhotoCard = ({ currentProduct }) => {
   const Images = [
