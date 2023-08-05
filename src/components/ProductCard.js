@@ -19,13 +19,12 @@ const ProductCard = ({
         >
           <img
             src={image}
-            alt=""
-            srcset=""
+            alt={title}
             className="h-auto w-full "
             style={{ maxWidth: "12rem", mixBlendMode: "multiply" }}
           />
           <div className="like-div absolute top-4 right-4 bg-white p-3 rounded-full h-10 w-10 flex items-center justify-center cursor-pointer">
-            <i class="fa-regular fa-heart text-lg"></i>
+            <i className="fa-regular fa-heart text-lg"></i>
           </div>
         </div>
         <div className="info py-5 flex ">
@@ -57,9 +56,9 @@ const ProductCard = ({
             </p>
 
             <div className="rating flex items-center ">
-              <div class="flex items-center space-x-1">
+              <div className="flex items-center space-x-1">
                 <svg
-                  class="w-4 h-4 text-green-400"
+                  className="w-4 h-4 text-green-400"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -68,7 +67,7 @@ const ProductCard = ({
                   <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
                 </svg>
                 <svg
-                  class="w-4 h-4 text-green-400"
+                  className="w-4 h-4 text-green-400"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -77,7 +76,7 @@ const ProductCard = ({
                   <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
                 </svg>
                 <svg
-                  class="w-4 h-4 text-green-400"
+                  className="w-4 h-4 text-green-400"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -86,7 +85,7 @@ const ProductCard = ({
                   <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
                 </svg>
                 <svg
-                  class="w-4 h-4 text-green-400"
+                  className="w-4 h-4 text-green-400"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -95,7 +94,7 @@ const ProductCard = ({
                   <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
                 </svg>
                 <svg
-                  class="w-4 h-4 text-gray-300 dark:text-gray-500"
+                  className="w-4 h-4 text-gray-300 dark:text-gray-500"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
