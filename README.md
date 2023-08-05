@@ -36,6 +36,18 @@ npm install
 npm start
 ```
 
+## Working Features
+- The design closely emulates the provided layout, with an emphasis on preserving the exact visual elements.
+- The application's responsiveness has been confirmed, ensuring accessibility and visual appeal across varying screen dimensions.
+- Product data is sourced from the fakeStore API to populate the inventory.
+- A considerate loading screen is seamlessly integrated to improve the experience during product loading periods.
+- The application precisely exhibits the data extracted from the API.
+- Navigating to a product's details page is accomplished by clicking on the item, offering a smooth transition without any loading delays.
+- Efficiency is heightened by employing a single API call, and the data retrieved is efficiently distributed to all relevant sections.
+- Star ratings are dynamically populated according to the ratings fetched from the API.
+- On individual product pages, the total product cost is computed, encompassing the 6-month EMI expense.
+- Breadcrumb navigation for each product has been adaptively updated based on its corresponding category.
+
 
 ## Screenshots (developed by me)
 
