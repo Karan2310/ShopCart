@@ -51,7 +51,7 @@ npm start
 
 ## Screenshots (developed by me)
 
-![screencapture-localhost-3000-2023-08-05-21_03_54 (1)](https://github.com/Karan2310/ShopCart/assets/72909842/ba8917bd-0a51-4a82-bcc9-fa700e26e54b)
+![download](https://github.com/Karan2310/ShopCart/assets/72909842/9044252b-1c7d-4ba3-b9c6-e0c72ce827f1)
 
-![screencapture-localhost-3000-product-14-2023-08-05-21_08_57](https://github.com/Karan2310/ShopCart/assets/72909842/6ffd7c92-50df-4d56-b7fb-4ab8e4d23ef4)
+![screencapture-localhost-3000-product-14-2023-08-05-23_05_01](https://github.com/Karan2310/ShopCart/assets/72909842/75158bed-8e09-490d-9f81-a165d16ff5e3)
 
