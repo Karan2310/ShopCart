@@ -30,9 +30,27 @@ const ProductCard = ({
         </div>
         <div className="info py-5 flex ">
           <div>
-            <h1 className="font-semibold">{title}</h1>
+            <h1
+              className="font-semibold"
+              style={{
+                display: "-webkit-box",
+                WebkitBoxOrient: "vertical",
+                WebkitLineClamp: 2,
+                overflow: "hidden",
+                textOverflow: "ellipsis",
+              }}
+            >
+              {title}
+            </h1>
             <p
-              style={{ fontSize: "12px" }}
+              style={{
+                fontSize: "12px",
+                display: "-webkit-box",
+                WebkitBoxOrient: "vertical",
+                WebkitLineClamp: 2,
+                overflow: "hidden",
+                textOverflow: "ellipsis",
+              }}
               className="text-gray-700 my-2 font-medium"
             >
               {description}
@@ -99,7 +117,7 @@ const ProductCard = ({
             </button>
           </div>
           <div>
-            <div className="flex font-semibold items-start ">
+            <div className="flex font-semibold items-start ms-5">
               <p className="text-xs">$</p>
               <p className="text-lg -mt-1">
                 {price ? price.toString().split(".")[0] : null}
